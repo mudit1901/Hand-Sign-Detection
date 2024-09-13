@@ -28,6 +28,7 @@ frame_placeholder = st.empty()
 
 while True:
     if stop:
+        video_stream.stop()
         break
     # Reading frame By Frame
     frame = video_stream.read()
